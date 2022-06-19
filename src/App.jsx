@@ -1,9 +1,12 @@
+import AppSeguro from "./components/AppSeguro";
 
 
 function App() {
+
+  
   return (
-    <div>
-        <h1>RAfce</h1>
+    <div className="container">
+      <AppSeguro />
     </div>
   );
 }
