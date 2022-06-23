@@ -1,10 +1,12 @@
-import React from 'react'
 import { MARCAS, YEARS, PLANES } from '../constants'
+import useCotizador from '../hooks/useCotizador';
 
 const Formulario = () => {
+
+
   return (
     <>
-      <form>
+      <form className='form'>
         <div>
             <label>Marca</label>
             <select
@@ -39,22 +41,26 @@ const Formulario = () => {
             </select>
         </div>
 
-        <div>
-            {PLANES.map(plan =>(
-                <div key={plan.id}>
-                    <label>{plan.nombre}</label>
-                    <input
-                        type="radio"
-                        name='plan'
-                        value={plan.id}
-                    />
+            <div>
+                <label>Elige tu plan</label>
+                <div className='container-plan'>
+                    {PLANES.map(plan =>(
+                        <div key={plan.id}>
+                            <label>{plan.nombre}</label>
+                            <input
+                                type="radio"
+                                name='plan'
+                                value={plan.id}
+                            />
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
+            </div>
 
         <input
             type="submit"
             value='Cotizar'
+            className='btn-submit'
         />
       </form>
     </>

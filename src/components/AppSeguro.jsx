@@ -2,9 +2,11 @@ import React from 'react'
 import Formulario from './Formulario'
 
 const AppSeguro = () => {
+
+
   return (
     <>
-     <header>
+     <header className='container-header'>
         <h1 className='text-center'>Cotizador de Seguros de Auto</h1>
      </header>
 

@@ -1,3 +1,47 @@
 body{
     background-color: skyblue !important;
 }
+
+.container-header{
+    padding: 30px
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form select{
+    width: 100%;
+    margin-bottom: 25px;
+    outline: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.container-plan{
+    display: flex;
+    margin: 20px 0;
+    gap: 3rem;
+}
+
+.container-plan label{
+   margin-right: 10px;
+}
+
+.container-plan input{
+   margin-right: 20px;
+}
+
+.btn-submit{
+    padding: 7px;
+    background-color: rgb(41, 173, 173);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+
+
