@@ -1,8 +1,10 @@
 import React from 'react'
+import useCotizador from '../hooks/useCotizador'
 import Formulario from './Formulario'
 
 const AppSeguro = () => {
 
+  const {resultado} = useCotizador()
 
   return (
     <>
@@ -12,6 +14,8 @@ const AppSeguro = () => {
 
      <main className='bg-white p-4'>
         <Formulario />
+
+        {resultado}
      </main>
     </>
   )
